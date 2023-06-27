@@ -28,7 +28,7 @@ namespace LoginAuthTestProject.Specs.Drivers
             var apkPath = Path.Combine(_testRunContext.TestDirectory, "..\\..\\..\\..\\LoginAuthProject.Android\\bin\\x86\\Release\\com.companyname.loginauthproject-Signed.apk");
             driverOptions.AddAdditionalCapability("appium:app", apkPath);
 
-            var Driver = new AndroidDriver<AndroidElement>(new Uri("http://127.0.0.1:4723"), driverOptions, TimeSpan.FromSeconds(180));
+            Driver = new AndroidDriver<AndroidElement>(new Uri("http://127.0.0.1:4723"), driverOptions, TimeSpan.FromSeconds(180));
         }
 
         public void StopApp()
