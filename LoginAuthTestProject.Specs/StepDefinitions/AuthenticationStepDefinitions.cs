@@ -1,12 +1,14 @@
-namespace LoginAuthTestSample.Specs.StepDefinitions
+using TechTalk.SpecFlow;
+
+namespace LoginAuthTestProject.Specs.StepDefinitions
 {
     [Binding]
     public sealed class AuthenticationStepDefinitions
     {
         // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
 
-        [Given("the first number is (.*)")]
-        public void GivenTheFirstNumberIs(int number)
+        [Given("User is in Xamarin App Home")]
+        public void GivenUserIsInXamarinAppHome()
         {
             //TODO: implement arrange (precondition) logic
             // For storing and retrieving scenario-specific data see https://go.specflow.org/doc-sharingdata
@@ -17,24 +19,25 @@ namespace LoginAuthTestSample.Specs.StepDefinitions
             throw new PendingStepException();
         }
 
-        [Given("the second number is (.*)")]
-        public void GivenTheSecondNumberIs(int number)
-        {
-            //TODO: implement arrange (precondition) logic
-
-            throw new PendingStepException();
-        }
-
-        [When("the two numbers are added")]
-        public void WhenTheTwoNumbersAreAdded()
+        [When("User navigates to hamburger menu")]
+        public void WhenUserNavigatesToHamburgerMenu()
         {
             //TODO: implement act (action) logic
 
             throw new PendingStepException();
         }
 
-        [Then("the result should be (.*)")]
-        public void ThenTheResultShouldBe(int result)
+        [When("User selects logout from hamburger menu")]
+        public void WhenUserSelectsLogoutFromHamburgerMenu()
+        {
+            //TODO: implement act (action) logic
+
+            throw new PendingStepException();
+        }
+
+
+        [Then("User is taken back to Xamarin App Login Page")]
+        public void ThenUserIsTakenBackToXamarinAppLoginPage()
         {
             //TODO: implement assert (verification) logic
 
