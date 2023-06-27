@@ -8,7 +8,6 @@ using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Appium.Enums;
 using TechTalk.SpecFlow.TestFramework;
-using Xamarin.UITest.Utils.Integration;
 
 namespace LoginAuthTestSample.Specs.Drivers
 {
