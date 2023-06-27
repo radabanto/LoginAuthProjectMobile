@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -29,6 +30,11 @@ namespace LoginAuthTestProject.Specs.Drivers
             driverOptions.AddAdditionalCapability("appium:app", apkPath);
 
             Driver = new AndroidDriver<AndroidElement>(new Uri("http://127.0.0.1:4723"), driverOptions, TimeSpan.FromSeconds(180));
+        }
+
+        public void WaitForElement(AndroidElement element, int noOfSeconds = 10)
+        {
+            new WebDriverWait(Driver, TimeSpan.FromSeconds(noOfSeconds)).Until(d => element.Displayed);
         }
 
         public void StopApp()
