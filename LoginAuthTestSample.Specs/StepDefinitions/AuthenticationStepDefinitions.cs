@@ -1,7 +1,7 @@
 namespace LoginAuthTestSample.Specs.StepDefinitions
 {
     [Binding]
-    public sealed class CalculatorStepDefinitions
+    public sealed class AuthenticationStepDefinitions
     {
         // For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
 
